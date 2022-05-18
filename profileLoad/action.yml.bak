@@ -1,10 +1,9 @@
 name: 'BTC EmbeddedPlatform GitHub Actions Library- Startup'
 description: 'Starts up BTC EmbeddedPlatform'
 inputs:
-  port:
-    description: 'The port used to connect to EmbeddedPlatform'
-    required: false
-    default: 29267
+  profilePath:
+    description: 'Path of the profile. If it does not exist, it will be created. The path can be absolute or relative to the jenkins job's workspace'
+    required: true
 runs:
   using: 'node16'
-  main: '../lib/startup.js'
+  main: '../lib/profilePath.js'
