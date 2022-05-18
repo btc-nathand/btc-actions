@@ -1,0 +1,10 @@
+name: 'BTC EmbeddedPlatform GitHub Actions Library- Startup'
+description: 'Starts up BTC EmbeddedPlatform'
+inputs:
+  port:
+    description: 'The port used to connect to EmbeddedPlatform'
+    required: false
+    default: 29267
+runs:
+  using: 'node16'
+  main: '../lib/startup.js'
