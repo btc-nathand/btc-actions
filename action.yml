@@ -1,0 +1,9 @@
+name: 'BTC EmbeddedPlatform GitHub Actions Library'
+description: 'Runs BTC EmbeddedPlatform Pipeline'
+inputs:
+  BTCConfigPath:
+    description: 'Path of the pipeline YML. This YML defines the workflow for BTC according to the specification at [TODO url].'
+    required: true
+runs:
+  using: 'node16'
+  main: '/lib/globalEntrypoint.js'
