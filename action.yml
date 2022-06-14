@@ -6,4 +6,4 @@ inputs:
     required: true
 runs:
   using: 'node16'
-  main: '${{GITHUB.ACTION_REPOSITORY}}/lib/globalEntrypoint.js'
+  main: 'lib/globalEntrypoint.js'
