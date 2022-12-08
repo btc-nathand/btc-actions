@@ -4,6 +4,9 @@ inputs:
   BTCPipePath:
     description: 'Path of the pipeline YML. This YML defines the workflow for BTC according to the specification at [TODO url].'
     required: true
+  ContinueOnFail:
+      description: "If the BTC Pipeline fails, do we continue running the larger pipeline, or do we stop everything? Default is 'false'"
+      required: false
 runs:
   using: 'node16'
   main: 'lib/globalEntrypoint.js'
